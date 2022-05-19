@@ -10,6 +10,42 @@
   background: transparent;
   padding: 1em;
 }
+
+/* Hamburger menu icon */
+.hamburger-icon {
+  position: relative;
+  width: 2.5%;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  transform: rotate(0deg);
+  padding: 0 0.6em;
+}
+.hamburger-icon span::before,
+.hamburger-icon span::after {
+  content: "";
+}
+.hamburger-icon span,
+.hamburger-icon span::before,
+.hamburger-icon span::after {
+  display: block;
+  position: absolute;
+  padding: 0.1em;
+  background: #d3531a;
+  border-radius: 0.1em;
+  opacity: 1;
+  left: 0;
+  right: 0;
+}
+.hamburger-icon span::before {
+  bottom: 0.4em;
+}
+.hamburger-icon span::after {
+  top: 0.4em;
+}
+.hamburger-icon.open span {
+  opacity: 0;
+  left: -3.75em;
+}
 .menu {
   list-style-type: none;
   display: flex;
