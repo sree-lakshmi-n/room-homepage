@@ -3,11 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 1em;
+}
+.menu {
+  list-style-type: none;
+  display: flex;
+  text-transform: lowercase;
+}
+.menu li {
+  margin: 0 1rem;
+}
+.menu li a {
+  color: #000000;
+  text-decoration: none;
+}
+/* Attribution Styling */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
 }
