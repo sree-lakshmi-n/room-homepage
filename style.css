@@ -43,6 +43,18 @@ body {
   letter-spacing: -0.02em;
 }
 
+/* Wrapper section */
+/* Adding slide show hero images */
+.hero-1 {
+  content: url("images/desktop-image-hero-1.jpg");
+}
+.hero-2 {
+  content: url("images/desktop-image-hero-2.jpg");
+}
+.hero-3 {
+  content: url("images/desktop-image-hero-3.jpg");
+}
+
 /* Attribution Styling */
 .attribution {
   font-size: 11px;
@@ -137,5 +149,19 @@ body {
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide down the overlay */
     pointer-events: none;
+  }
+
+  /* Wrapper section */
+  .top-banner img {
+    width: 100%;
+  }
+  .hero-1 {
+    content: url("images/mobile-image-hero-1.jpg");
+  }
+  .hero-2 {
+    content: url("images/mobile-image-hero-2.jpg");
+  }
+  .hero-3 {
+    content: url("images/mobile-image-hero-3.jpg");
   }
 }
