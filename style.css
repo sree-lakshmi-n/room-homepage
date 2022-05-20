@@ -95,8 +95,9 @@
 }
 
 /* Top banner content layout and styling */
-.top-banner-content {
-  padding: 3.5em 4em;
+.top-banner-content,
+.about-content {
+  padding: 0em 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,10 +106,10 @@
   font-size: 2.5em;
   margin-bottom: 0.5em;
 }
-.top-banner-content-writeup {
+.top-banner-content-writeup,
+.about-content-writeup {
   color: #a1a1a1;
   line-height: 1.5;
-  margin-bottom: 2em;
 }
 /* Shop now button styling */
 .shop-now-btn {
@@ -121,15 +122,32 @@
   background-color: transparent;
   font-size: 0.9em;
   font-weight: bold;
+  margin-top: 2em;
 }
 .shop-now-btn > img {
   margin-left: 1.5em;
   width: 8%;
 }
-
-/* About section */
+/* About section layout */
+.about-section {
+  display: flex;
+}
+.about-section :nth-child(n) {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+/* About section styling*/
 .about-section img {
   width: 100%;
+}
+.about-content {
+  padding: 2em 4em;
+}
+.about-content-heading {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-bottom: 0.5em;
 }
 @media only screen and (max-width: 375px) {
   /* Reducing top nav padding so that it won't be an issue in tiny screens */
@@ -225,7 +243,8 @@
   .top-banner > img {
     width: 100%;
   }
-  .top-banner-content {
+  .top-banner-content,
+  .about-content {
     padding: 3.5em 2.5em;
   }
   .top-banner-content-heading {
@@ -253,6 +272,14 @@
   /*Shop now button arrow image sizing*/
   .shop-now-btn > img {
     width: 15%;
+  }
+  /* About section layout */
+  .about-section {
+    display: block;
+  }
+  /* About content styling */
+  .about-content-heading {
+    font-size: 0.8em;
   }
 }
 /* Generic hide class for slides */
