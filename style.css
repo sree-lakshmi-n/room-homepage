@@ -55,6 +55,29 @@ body {
   content: url("images/desktop-image-hero-3.jpg");
 }
 
+/* Slide show buttons */
+.arrow-btns {
+  background-color: #ffffff;
+  padding: 1em;
+  font-size: 0; /*To remove space between its child buttons*/
+  display: inline;
+}
+.prev-btn,
+.next-btn {
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  padding: 1.5em;
+  border: none;
+  outline: none;
+}
+.prev-btn {
+  background-image: url("images/icon-angle-left.svg");
+}
+.next-btn {
+  background-image: url("images/icon-angle-right.svg");
+}
 /* Attribution Styling */
 .attribution {
   font-size: 11px;
