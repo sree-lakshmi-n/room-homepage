@@ -3,24 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: burlywood;
+}
 .top-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   background: transparent;
   padding: 1em;
 }
 .top-nav {
   position: fixed;
-}
-.white-background {
-  background-color: #ffffff;
-}
-.hide {
-  display: none;
-}
-.show {
-  display: block;
 }
 /* Hamburger menu icon */
 .hamburger-icon {
@@ -42,7 +37,7 @@
   display: block;
   position: absolute;
   padding: 0.1em;
-  background: #d3531a;
+  background: #ffffff;
   border-radius: 0.1em;
   opacity: 1;
   left: 0;
@@ -80,8 +75,15 @@
   color: #000000;
   text-decoration: none;
 }
-.fixed-position {
+.position-and-colour {
   position: fixed;
+  background-color: hsla(0, 0%, 27%, 0.449);
+}
+.white-background {
+  background-color: #ffffff;
+}
+.hide {
+  display: none;
 }
 /* Attribution Styling */
 .attribution {
