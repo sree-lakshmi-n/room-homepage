@@ -24,12 +24,15 @@ let slideIndex = 1;
 
 const showSlide = (index) => {
   const slides = document.getElementsByClassName("hero");
+  const writeup = document.getElementsByClassName("top-banner-content");
   if (index > slides.length) slideIndex = 1;
   if (index < 1) slideIndex = slides.length;
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.add("hideSlide");
+    writeup[i].classList.add("hideSlide");
   }
   slides[slideIndex - 1].classList.remove("hideSlide");
+  writeup[slideIndex - 1].classList.remove("hideSlide");
 };
 const prevSlide = () => {
   slideIndex -= 1;
