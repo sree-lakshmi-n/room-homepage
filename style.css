@@ -55,20 +55,27 @@ body {
   content: url("images/desktop-image-hero-3.jpg");
 }
 
-/* Slide show buttons */
+/* Top banner slide show layout */
+.top-banner-slideshow {
+  position: relative;
+}
+/* Slide show buttons container layout and styling*/
 .arrow-btns {
   background-color: #ffffff;
-  padding: 1em;
   font-size: 0; /*To remove space between its child buttons*/
   display: inline;
+  position: absolute;
+  width: max-content;
+  bottom: 0.7%;
 }
+/* Slide show buttons styling */
 .prev-btn,
 .next-btn {
   background-color: #000000;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20%;
-  padding: 1.5em;
+  padding: 2em;
   border: none;
   outline: none;
 }
@@ -78,6 +85,7 @@ body {
 .next-btn {
   background-image: url("images/icon-angle-right.svg");
 }
+
 /* Attribution Styling */
 .attribution {
   font-size: 11px;
@@ -186,5 +194,10 @@ body {
   }
   .hero-3 {
     content: url("images/mobile-image-hero-3.jpg");
+  }
+
+  .arrow-btns {
+    right: 0;
+    bottom: 1%;
   }
 }
