@@ -58,6 +58,7 @@
 /* Top banner slide show layout */
 .top-banner-slideshow {
   position: relative;
+  margin-bottom: -0.25em;
 }
 /* Slide show buttons container layout and styling*/
 .arrow-btns {
