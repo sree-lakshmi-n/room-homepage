@@ -85,10 +85,6 @@
 .next-btn {
   background-image: url("images/icon-angle-right.svg");
 }
-/* Generic hide class for slides */
-.hideSlide {
-  display: none;
-}
 /* Attribution Styling */
 .attribution {
   font-size: 11px;
@@ -100,10 +96,10 @@
 
 /* Top banner content layout and styling */
 .top-banner-content {
-  padding: 3.5em 2.5em;
+  padding: 3.5em 4em;
 }
 .top-banner-content-heading {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 0.5em;
 }
 .top-banner-content-writeup {
@@ -127,6 +123,7 @@
   margin-left: 1.5em;
   width: 8%;
 }
+
 @media only screen and (max-width: 375px) {
   /* Reducing top nav padding so that it won't be an issue in tiny screens */
   .top-nav {
@@ -221,6 +218,12 @@
   .top-banner > img {
     width: 100%;
   }
+  .top-banner-content {
+    padding: 3.5em 2.5em;
+  }
+  .top-banner-content-heading {
+    font-size: 2em;
+  }
   .hero-1 {
     content: url("images/mobile-image-hero-1.jpg");
   }
@@ -244,4 +247,10 @@
   .shop-now-btn > img {
     width: 15%;
   }
+}
+/* Generic hide class for slides */
+/* Kept at bottom so that writeup slideshow functionality would be undisturbed */
+/* Else, display: flex declared at start will be the one with higher specificity */
+.hideSlide {
+  display: none;
 }
