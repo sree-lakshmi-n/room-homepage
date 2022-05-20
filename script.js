@@ -20,3 +20,24 @@ hamburger.addEventListener("click", (element) => {
 // Slide show functionality
 const prev = document.getElementsByClassName("prev-btn")[0];
 const next = document.getElementsByClassName("next-btn")[0];
+let slideIndex = 1;
+
+const showSlide = (index) => {
+  const slides = document.getElementsByClassName("hero");
+  if (index > slides.length) slideIndex = 1;
+  if (index < 1) slideIndex = slides.length;
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.add("hideSlide");
+  }
+  slides[slideIndex - 1].classList.remove("hideSlide");
+};
+const prevSlide = () => {
+  slideIndex -= 1;
+  showSlide(slideIndex);
+};
+const nextSlide = () => {
+  slideIndex += 1;
+  showSlide(slideIndex);
+};
+prev.addEventListener("click", prevSlide);
+next.addEventListener("click", nextSlide);
