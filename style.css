@@ -1,10 +1,14 @@
+/* League Spartan font */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap");
 /* Global reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: "League Spartan", sans-serif;
+}
 /* Top nav layout */
 .top-nav {
   display: flex;
@@ -16,6 +20,7 @@
   position: fixed;
   z-index: 2; /*For top nav to stay on top of overlay*/
   color: #ffffff;
+  padding-top: 2em;
 }
 /* Hiding the hamburger icon */
 .hamburger-icon {
@@ -281,6 +286,7 @@
   /* About content styling */
   .about-content-heading {
     font-size: 0.8em;
+    margin-bottom: 1em;
   }
 }
 /* Generic hide class for slides */
