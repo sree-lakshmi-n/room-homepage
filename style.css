@@ -50,6 +50,11 @@
   content: url("images/desktop-image-hero-3.jpg");
 }
 
+/* Top banner layout
+.top-banner {
+  display: flex;
+} */
+
 /* Top banner slide show layout */
 .top-banner-slideshow {
   position: relative;
@@ -105,6 +110,21 @@
   color: #a1a1a1;
   line-height: 1.5;
   margin-bottom: 2em;
+}
+/* Shop now button styling */
+.shop-now-btn {
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  letter-spacing: 0.65em;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 0.8em;
+}
+.shop-now-btn > img {
+  margin-left: 1.5em;
+  width: 3%;
 }
 @media only screen and (max-width: 375px) {
   /* Reducing top nav padding so that it won't be an issue in tiny screens */
@@ -194,7 +214,7 @@
   }
 
   /* Wrapper section */
-  .top-banner img {
+  .top-banner > img {
     width: 100%;
   }
   .hero-1 {
@@ -206,9 +226,13 @@
   .hero-3 {
     content: url("images/mobile-image-hero-3.jpg");
   }
-
+  /* Slide show buttons positioning */
   .arrow-btns {
     right: 0;
     bottom: 1%;
+  }
+  /*Shop now button arrow image sizing*/
+  .shop-now-btn > img {
+    width: 15%;
   }
 }
