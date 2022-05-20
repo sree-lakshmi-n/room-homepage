@@ -16,6 +16,12 @@
 .white-background {
   background-color: #ffffff;
 }
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
 /* Hamburger menu icon */
 .hamburger-icon {
   position: relative;
