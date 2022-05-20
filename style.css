@@ -31,6 +31,8 @@ body {
   transform: rotate(0deg);
   padding: 0 0.6em;
 }
+
+/* Hamburger icon components layout */
 .hamburger-icon span::before,
 .hamburger-icon span::after {
   content: "";
@@ -54,6 +56,8 @@ body {
 .hamburger-icon span::after {
   top: 0.4em;
 }
+
+/* Open class -> defines layout and styling of hamburger icon elements once the icon is clicked */
 .open span {
   background-color: transparent;
 }
@@ -67,6 +71,8 @@ body {
   transform: rotate(135deg);
   background: #a1a1a1;
 }
+
+/* Menu layout and styling */
 .menu {
   list-style-type: none;
   display: flex;
@@ -79,6 +85,8 @@ body {
   color: #000000;
   text-decoration: none;
 }
+
+/* Generic classes to be added after corresponding events */
 .white-background {
   background-color: #ffffff;
 }
@@ -91,7 +99,7 @@ body {
 /* Overlay Styling */
 .overlay {
   position: fixed; /* Stay in place */
-  background-color: hsla(0, 0%, 27%, 0.449);
+  background-color: #45454572;
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
