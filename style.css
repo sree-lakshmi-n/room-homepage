@@ -14,101 +14,34 @@ body {
 .top-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   background: transparent;
-  padding: 1em;
+  padding: 1em 2em;
   position: fixed;
   z-index: 2; /*For top nav to stay on top of overlay*/
+  color: #ffffff;
 }
-
-/* Hamburger menu icon */
+/* Hiding the hamburger icon */
 .hamburger-icon {
-  position: relative;
-  width: 2.5%;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-  transform: rotate(0deg);
-  padding: 0 0.6em;
+  display: none;
 }
-
-/* Hamburger icon components layout */
-.hamburger-icon span::before,
-.hamburger-icon span::after {
-  content: "";
-}
-.hamburger-icon span,
-.hamburger-icon span::before,
-.hamburger-icon span::after {
-  display: block;
-  position: absolute;
-  padding: 0.1em;
-  background: #ffffff;
-  border-radius: 0.1em;
-  opacity: 1;
-  left: 0;
-  right: 0;
-  transition: 0.5s ease-in-out;
-}
-.hamburger-icon span::before {
-  bottom: 0.4em;
-}
-.hamburger-icon span::after {
-  top: 0.4em;
-}
-
-/* Open class -> defines layout and styling of hamburger icon elements once the icon is clicked */
-.open span {
-  background-color: transparent;
-}
-.open span::before {
-  top: 0;
-  transform: rotate(45deg);
-  background: #a1a1a1;
-}
-.open span::after {
-  top: 0;
-  transform: rotate(135deg);
-  background: #a1a1a1;
-}
-
 /* Menu layout and styling */
 .menu {
   list-style-type: none;
   display: flex;
   text-transform: lowercase;
+  margin-left: 2.5em;
+  font-weight: bold;
 }
 .menu li {
   margin: 0 1rem;
 }
 .menu li a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
-/* Generic classes to be added after corresponding events */
-.white-background {
-  background-color: #ffffff;
-}
-.hide {
-  display: none;
-}
-.avoid-clicks {
-  pointer-events: none;
-}
-/* Overlay Styling */
-.overlay {
-  position: fixed; /* Stay in place */
-  background-color: #45454572;
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide down the overlay */
-  pointer-events: none;
-}
 /* Attribution Styling */
 .attribution {
   font-size: 11px;
@@ -116,4 +49,92 @@ body {
 }
 .attribution a {
   color: #3e52a3;
+}
+
+@media only screen and (max-width: 375px) {
+  /* Reducing top nav padding so that it won't be an issue in tiny screens */
+  .top-nav {
+    padding: 1em;
+    justify-content: space-between;
+  }
+  /* Hamburger menu icon */
+  .hamburger-icon {
+    display: block;
+    position: relative;
+    width: 2.5%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    transform: rotate(0deg);
+    padding: 0 0.6em;
+    color: #000000;
+  }
+  /* Hamburger icon components layout */
+  .hamburger-icon span::before,
+  .hamburger-icon span::after {
+    content: "";
+  }
+  .hamburger-icon span,
+  .hamburger-icon span::before,
+  .hamburger-icon span::after {
+    display: block;
+    position: absolute;
+    padding: 0.1em;
+    background: #ffffff;
+    border-radius: 0.1em;
+    opacity: 1;
+    left: 0;
+    right: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .hamburger-icon span::before {
+    bottom: 0.4em;
+  }
+  .hamburger-icon span::after {
+    top: 0.4em;
+  }
+
+  /* Open class -> defines layout and styling of hamburger icon elements once the icon is clicked */
+  .open span {
+    background-color: transparent;
+  }
+  .open span::before {
+    top: 0;
+    transform: rotate(45deg);
+    background: #a1a1a1;
+  }
+  .open span::after {
+    top: 0;
+    transform: rotate(135deg);
+    background: #a1a1a1;
+  }
+  .menu {
+    margin-left: 0;
+  }
+  .menu li a {
+    color: #000000;
+  }
+  /* Generic classes to be added after corresponding events */
+  .white-background {
+    background-color: #ffffff;
+  }
+
+  .avoid-clicks {
+    pointer-events: none;
+  }
+  .hide {
+    display: none;
+  }
+  /* Overlay Styling */
+  .overlay {
+    position: fixed; /* Stay in place */
+    background-color: #45454572;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide down the overlay */
+    pointer-events: none;
+  }
 }
