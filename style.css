@@ -19,6 +19,7 @@ body {
   background: transparent;
   padding: 1em;
   position: fixed;
+  z-index: 2; /*For top nav to stay on top of overlay*/
 }
 
 /* Hamburger menu icon */
@@ -29,7 +30,6 @@ body {
   cursor: pointer;
   transform: rotate(0deg);
   padding: 0 0.6em;
-  z-index: 1;
 }
 .hamburger-icon span::before,
 .hamburger-icon span::after {
@@ -79,15 +79,27 @@ body {
   color: #000000;
   text-decoration: none;
 }
-/* .position-and-colour {
-  position: fixed;
-  background-color: hsla(0, 0%, 27%, 0.449);
-} */
 .white-background {
   background-color: #ffffff;
 }
 .hide {
   display: none;
+}
+.avoid-clicks {
+  pointer-events: none;
+}
+/* Overlay Styling */
+.overlay {
+  position: fixed; /* Stay in place */
+  background-color: hsla(0, 0%, 27%, 0.449);
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide down the overlay */
+  pointer-events: none;
 }
 /* Attribution Styling */
 .attribution {
