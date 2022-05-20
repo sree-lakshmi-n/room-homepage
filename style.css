@@ -50,10 +50,10 @@
   content: url("images/desktop-image-hero-3.jpg");
 }
 
-/* Top banner layout
+/* Top banner layout*/
 .top-banner {
   display: flex;
-} */
+}
 
 /* Top banner slide show layout */
 .top-banner-slideshow {
@@ -117,14 +117,15 @@
   text-align: left;
   border: none;
   outline: none;
-  letter-spacing: 0.65em;
+  letter-spacing: 0.7em;
   text-transform: uppercase;
   background-color: transparent;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  font-weight: bold;
 }
 .shop-now-btn > img {
   margin-left: 1.5em;
-  width: 3%;
+  width: 8%;
 }
 @media only screen and (max-width: 375px) {
   /* Reducing top nav padding so that it won't be an issue in tiny screens */
@@ -214,6 +215,9 @@
   }
 
   /* Wrapper section */
+  .top-banner {
+    display: block;
+  }
   .top-banner > img {
     width: 100%;
   }
@@ -230,6 +234,11 @@
   .arrow-btns {
     right: 0;
     bottom: 1%;
+  }
+  /* Shop now button styling */
+  .shop-now-btn {
+    font-size: 0.8em;
+    letter-spacing: 0.65em;
   }
   /*Shop now button arrow image sizing*/
   .shop-now-btn > img {
