@@ -1,4 +1,6 @@
 `use strict`;
+
+// Hamburger icon functionality and animation
 const hamburger = document.getElementsByClassName("hamburger-icon")[0];
 const nav = document.getElementsByClassName("top-nav")[0];
 const logo = document.getElementsByClassName("logo")[0];
@@ -14,3 +16,7 @@ hamburger.addEventListener("click", (element) => {
   menu.classList.toggle("hide");
   overlay.classList.toggle("hide");
 });
+
+// Slide show functionality
+const prev = document.getElementsByClassName("prev-btn")[0];
+const next = document.getElementsByClassName("next-btn")[0];
