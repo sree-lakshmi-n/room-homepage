@@ -10,7 +10,12 @@
   background: transparent;
   padding: 1em;
 }
-
+.top-nav {
+  position: fixed;
+}
+.white-background {
+  background-color: #ffffff;
+}
 /* Hamburger menu icon */
 .hamburger-icon {
   position: relative;
@@ -19,6 +24,7 @@
   cursor: pointer;
   transform: rotate(0deg);
   padding: 0 0.6em;
+  z-index: 1;
 }
 .hamburger-icon span::before,
 .hamburger-icon span::after {
@@ -35,6 +41,7 @@
   opacity: 1;
   left: 0;
   right: 0;
+  transition: 0.5s ease-in-out;
 }
 .hamburger-icon span::before {
   bottom: 0.4em;
@@ -42,9 +49,18 @@
 .hamburger-icon span::after {
   top: 0.4em;
 }
-.hamburger-icon.open span {
-  opacity: 0;
-  left: -3.75em;
+.open span {
+  background-color: transparent;
+}
+.open span::before {
+  top: 0;
+  transform: rotate(45deg);
+  background: #a1a1a1;
+}
+.open span::after {
+  top: 0;
+  transform: rotate(135deg);
+  background: #a1a1a1;
 }
 .menu {
   list-style-type: none;
@@ -57,6 +73,9 @@
 .menu li a {
   color: #000000;
   text-decoration: none;
+}
+.fixed-position {
+  position: fixed;
 }
 /* Attribution Styling */
 .attribution {
