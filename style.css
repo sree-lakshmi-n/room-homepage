@@ -127,6 +127,10 @@
   width: 8%;
 }
 
+/* About section */
+.about-section img {
+  width: 100%;
+}
 @media only screen and (max-width: 375px) {
   /* Reducing top nav padding so that it won't be an issue in tiny screens */
   .top-nav {
