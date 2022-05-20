@@ -85,7 +85,10 @@ body {
 .next-btn {
   background-image: url("images/icon-angle-right.svg");
 }
-
+/* Generic hide class for slides */
+.hideSlide {
+  display: none;
+}
 /* Attribution Styling */
 .attribution {
   font-size: 11px;
