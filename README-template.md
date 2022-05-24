@@ -31,9 +31,9 @@ Users should be able to:
 #### Desktop Version
 
 <p text-align="center">
-  <img src="./images/screenshots/one.png" width=30%>
-  <img src="./images/screenshots/two.png" width=30%>
-  <img src="./images/screenshots/three.png" width=30%>
+  <img src="./screenshots/one.png" width=30%>
+  <img src="./screenshots/two.png" width=30%>
+  <img src="./screenshots/three.png" width=30%>
 </p>
 ![](./screenshot.jpg)
 
