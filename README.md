@@ -44,6 +44,13 @@ Users should be able to:
   <img src="./screenshots/mobile/three.jpg" width=30%>
 </p>
 
+#### Active States
+
+<p text-align="center">
+  <img src="./screenshots/active/desktop.png" width=30%>
+  <img src="./screenshots/active/mobile.png" width=30%>
+</p>
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
