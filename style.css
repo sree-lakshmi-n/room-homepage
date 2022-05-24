@@ -44,16 +44,6 @@ body {
 }
 
 /* Wrapper section */
-/* Adding slide show hero images */
-.hero-1 {
-  content: url("images/desktop-image-hero-1.jpg");
-}
-.hero-2 {
-  content: url("images/desktop-image-hero-2.jpg");
-}
-.hero-3 {
-  content: url("images/desktop-image-hero-3.jpg");
-}
 
 /* Top banner layout*/
 .top-banner {
@@ -155,7 +145,7 @@ body {
   letter-spacing: 0.3em;
   margin-bottom: 0.5em;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 820px) {
   /* Reducing top nav padding so that it won't be an issue in tiny screens */
   .top-nav {
     padding: 1em;
@@ -256,14 +246,8 @@ body {
   .top-banner-content-heading {
     font-size: 2em;
   }
-  .hero-1 {
-    content: url("images/mobile-image-hero-1.jpg");
-  }
-  .hero-2 {
-    content: url("images/mobile-image-hero-2.jpg");
-  }
-  .hero-3 {
-    content: url("images/mobile-image-hero-3.jpg");
+  .hero {
+    width: 100%;
   }
   /* Slide show buttons positioning */
   .arrow-btns {
