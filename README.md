@@ -47,7 +47,13 @@ Users should be able to:
 #### Active States
 
 <p text-align="center">
+
+##### In desktop
+
   <img src="./screenshots/active/desktop.png" width=100%>
+
+##### In mobile
+
   <img src="./screenshots/active/mobile.png" width=40%>
 </p>
 
