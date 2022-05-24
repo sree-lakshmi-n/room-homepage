@@ -39,9 +39,9 @@ Users should be able to:
 #### Mobile Version
 
 <p text-align="center">
-  <img src="./screenshots/mobile/one.jpg" width=30%>
-  <img src="./screenshots/mobile/two.jpg" width=30%>
-  <img src="./screenshots/mobile/three.jpg" width=30%>
+  <img src="./screenshots/mobile/one.jpg" width=20%>
+  <img src="./screenshots/mobile/two.jpg" width=20%>
+  <img src="./screenshots/mobile/three.jpg" width=20%>
 </p>
 
 #### Active States
@@ -59,8 +59,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/sree-lakshmi-n/room-homepage)
+- [Live Site URL](https://sree-lakshmi-n.github.io/room-homepage/)
 
 ## My process
 
