@@ -35,12 +35,13 @@ Users should be able to:
   <img src="./screenshots/desktop/two.png" width=30%>
   <img src="./screenshots/desktop/three.png" width=30%>
 </p>
+
 #### Mobile Version
 
 <p text-align="center">
-  <img src="./screenshots/desktop/one.png" width=30%>
-  <img src="./screenshots/desktop/two.png" width=30%>
-  <img src="./screenshots/desktop/three.png" width=30%>
+  <img src="./screenshots/mobile/one.png" width=30%>
+  <img src="./screenshots/mobile/two.png" width=30%>
+  <img src="./screenshots/mobile/three.png" width=30%>
 </p>
 
 ### Links
