@@ -47,8 +47,8 @@ Users should be able to:
 #### Active States
 
 <p text-align="center">
-  <img src="./screenshots/active/desktop.png" width=30%>
-  <img src="./screenshots/active/mobile.png" width=30%>
+  <img src="./screenshots/active/desktop.png" width=50%>
+  <img src="./screenshots/active/mobile.png" width=50%>
 </p>
 
 ### Links
