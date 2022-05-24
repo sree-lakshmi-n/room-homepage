@@ -145,6 +145,29 @@ body {
   letter-spacing: 0.3em;
   margin-bottom: 0.5em;
 }
+/* Active States */
+.menu li {
+  position: relative;
+}
+.menu li:hover::after,
+.menu li:active::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  display: block;
+  height: 0.1em;
+  background-color: #ffffff;
+  bottom: -0.3125em;
+  left: 20%;
+}
+.shop-now-btn:hover,
+.shop-now-btn:active {
+  filter: brightness(0) invert(0.6);
+}
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #454545;
+}
 @media only screen and (max-width: 820px) {
   /* Reducing top nav padding so that it won't be an issue in tiny screens */
   .top-nav {
@@ -271,6 +294,11 @@ body {
   .about-content-heading {
     font-size: 0.8em;
     margin-bottom: 1em;
+  }
+  /* Active State */
+  .menu li:hover::after,
+  .menu li:active::after {
+    background-color: #000000;
   }
 }
 /* Generic hide class for slides */
