@@ -39,9 +39,9 @@ Users should be able to:
 #### Mobile Version
 
 <p text-align="center">
-  <img src="./screenshots/mobile/one.png" width=30%>
-  <img src="./screenshots/mobile/two.png" width=30%>
-  <img src="./screenshots/mobile/three.png" width=30%>
+  <img src="./screenshots/mobile/one.jpg" width=30%>
+  <img src="./screenshots/mobile/two.jpg" width=30%>
+  <img src="./screenshots/mobile/three.jpg" width=30%>
 </p>
 
 ### Links
